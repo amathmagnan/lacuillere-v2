@@ -1,5 +1,19 @@
-<H1>EDIT</H1>
 
+  <%= form_for @restaurant do |f| %>
+
+  <%= f.label :name, "Enter a name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :address, "Which address ?" %>
+  <%= f.text_field :address %>
+
+  <%= f.label :stars, "How many stars ? " %>
+  <%= f.number_field :stars %>
+
+  <%= f.submit  %>
+<% end %>
+
+<!----
 <form action="/restaurants" method="patch">
 
 <p>Nom Restaurant <input type="text" name="restaurants[name]" value="Dindon"></p>
@@ -8,3 +22,5 @@
 <p>Créer restaurant<input type="submit" value="Create Restaurant"></p>
 
 </form>
+
+--->

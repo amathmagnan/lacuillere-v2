@@ -1,3 +1,19 @@
+  <%= form_for @restaurant do |f| %>
+
+  <%= f.label :name, "Enter a name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :address, "Which address ?" %>
+  <%= f.text_field :address %>
+
+  <%= f.label :stars, "How many stars ? " %>
+  <%= f.number_field :stars %>
+
+  <%= f.submit  %>
+<% end %>
+
+
+<!---
 <H1>NEW</H1>
 
 <form action="/restaurants" method="post">
@@ -8,3 +24,4 @@
 
 <input type="submit" value="Create Restaurant">
 </form>
+--->
